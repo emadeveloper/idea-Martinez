@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+     <!-- body normalize -->
+     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+     <!-- STYLES CSS -->
+     <link rel="stylesheet" href="../styles/styles.css">
+     <!-- Font Awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"> ">
+     <!--FONT OSWALD-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="contact-header">
+            <a class="logo" href="../index.html">Heavy Duty</a>
+        </header>
+        <div class="form-container">
+            <h2 class="form-title">Logueate Aca</h2>
+            <form action="">
+                <fieldset>
+                    <legend>Informacion personal</legend>
+                    <div>
+                        <legend>Sexo</legend>
+                        <input type="radio" name="sexo" value="hombre">
+                        <label for="hombre">Hombre</label>
+                        
+                        <input type="radio" name="sexo" value="mujer">
+                        <label for="mujer">Mujer</label>
+                        
+                        <input type="radio" name="sexo" value="otro">
+                        <label for="otro">Prefiero no decir</label>
+                    </div>
+                    
+                    <div><br>
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" name="nombre" placeholder="Escriba aqui su nombre...">
+                   </div> 
+                    
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input id="apellido" type="text" name="apellido" placeholder="Escriba aqui su apellido...">
+                    </div>
+        
+                    <div>
+                        <label for="mail">Email</label>
+                        <input type="mail" name="mail" placeholder="Ingrese aqui su email...">
+                    </div>
+                    
+                    <div>
+                        <label for="contraseña">Contraseña</label>
+                        <input id="contraseña" placeholder="Escriba aqui su contraseña..." type="password">
+                    </div>
+        
+                    <div>
+                        <legend>Cual es tu objetivo</legend>
+                        <select name="cual es tu objetivo" id="objetivo">
+                            <option value="hidden"></option>
+                            <option value="perder peso">Perder peso</option>
+                            <option value="mantener mi peso">Mantener mi peso</option>
+                            <option value="ganar masa muscular">Ganar masa muscular</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="newsletter">Queres recibir nuestro Newsletter?</label >
+                        <input type="checkbox" name="newsletter">
+                    </div>
+                    <br>
+                    <div>
+                        <textarea name="comment-box" id="" cols="30" rows="10" placeholder="Dejanos tu comentario aca..."></textarea >
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar formulario">
+                        <input type="reset" value="Limpiar formulario">
+                    </div>
+                    
+                </fieldset>
+            </form>
+        </div>
+    
+        <div>
+            <section class="social-media">
+                <p>Seguinos en nuestras redes sociales</p>
+                <div class="social-links">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://wa.me/######?text=¡Estoy+interesado!">
+                        <i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="../index.html">Volver al Inicio</a>  
+                </div>
+            </section>
+            <footer class="footer">
+                <hr>
+                <p>Copyright 2022. Todos los derechos reservados</p>
+            </footer>   
+        </div>
+    </div>
+    
+
+</body>
+</html>
