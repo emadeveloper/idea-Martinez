@@ -4,71 +4,43 @@ body {
     background-color: #1a1a1a;
 }
 
-/* Container */
-.container {
-    max-width: 90%;
-    margin: 0px auto; 
-}
-
 /* INDEX STYLES */
-
-
-/* nav-menu */
-nav {
-    background-color: #1a1a1a;
-    padding: 5px;
-    margin: 0px auto;
-    width: 100%;    
-
-}
-
 .nav-menu {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
-   
-
 }
 
-ul, li, a, button {
-    font-family: sans-serif;
-    font-weight: 600;
+.nav-link {
     font-size: 1rem;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    list-style: none;
-    border-radius: 50px;
-    transition: 0.2s ease-in;
-
-}
-
-
-.logo {
-    cursor: pointer;
-    color:#fff;
-    margin-right:auto;
-    font-size: 3rem;
-    font-family:'oswald';
     text-transform: uppercase;
-    padding: 20px;
-    border: 1px solid #fff;
-    border-radius: 0;
-    transition: 0.5s ease-in;
 }
 
-.logo:hover {
+.nav-link:hover {
+    background-color:#075dc6;
+    
+}
+
+.nav-item {
+    margin: 10px;
+    padding: 0px 10px;
+}
+
+.navbar-brand {
+    font-size: 3rem;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'oswald';
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+
+.navbar-brand:hover {
     background-color:#075dc6;
     transform: translate(X);
 }
 
-
-.nav-menu li {
-    padding: 10px 5px;
-    margin: 5px;
-
-}
 
 button {
     cursor: pointer;
@@ -77,18 +49,13 @@ button {
     border-radius: 50px;
     border: none;
     margin: 5px;
-    transition: 0.2s ease-in;
-}
-
-ul li a:hover {
-    background-color:#075dc6;
-    
+    transition: 0.2s ease-in-out;
 }
 
 button:hover {
     background-color:#066ce9;
     transform: translate(X);
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 
 
@@ -106,22 +73,22 @@ button:hover {
     justify-content: center;
     color: #fff;
     font-family: sans-serif;
-    margin-bottom: 10px;
+    
 }
-.banner1, h1 {
+
+.banner1 h1 {
     font-size: 4rem;
     margin: 5px auto;
     padding: 10px 10px;
     text-align: center;
 }
-.banner1, p {
+.banner1 p {
     font-size: 1.5rem;
     margin: 0px 10px;
     padding: 30px 10px;
     text-align: center;
     line-height: 1.5;
 }
-
 /* section2 */
 
 .banner2 {
@@ -137,14 +104,20 @@ button:hover {
     justify-content: center;
     color: #fff;
     font-family: Helvetica, sans-serif;
+    margin-bottom: 30px;
 }
 
-.banner2, h2 {
+.banner2 h2 {
     font-size: 3rem;
     text-align: center;
 }
-.banner2, p {
+.banner2 p {
     font-size: 1.5rem;
+    text-align: center;
+}
+
+.carousel-title {
+    color: #f8f8f8;
     text-align: center;
 }
 
@@ -200,8 +173,9 @@ button:hover {
 }
 
 .social-links a {
+    color: #f8f8f8;
     padding: 0;
-    transition: 0.5s ease;
+    transition: 0.5s ease-in-out;
 }
 
 .social-links a:hover {
@@ -235,11 +209,17 @@ button:hover {
 
 .grid-container img {
     width: 100%;
-    height: 275px;
+ 
 }
 
 .grid-container div {
     border: solid 1px #fff;
+}
+
+header .head-title {
+    color: #f8f8f8;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .grid-container h3 {
@@ -249,16 +229,15 @@ button:hover {
     padding: 10px;
 }
 
-.head-title {
+.diet-article {
     color: #fff;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    text-align: center;  
-    text-decoration: none;  
+    font-size: 1rem;  
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 0px 10px;  
 }
 
 .grid-container p {
-    color: #fff;
     font-size: 1rem;
     text-align: center;
     margin: 10px auto;
@@ -271,9 +250,8 @@ button:hover {
     text-align: center;
 }
 
-.contact-header .logo {
-    text-align: center;
-    line-height: 3;
+.contact-header .navbar-brand {
+    color: #f8f8f8;
 }
 
 .form-container {
@@ -347,12 +325,12 @@ input[type=submit] {
 }
 
 input[type=reset] {
-    font-size: 1.25rem;
-    margin-left: 145px;
-    padding: 15px 30px;
+    font-size: 0.5rem;
+    margin-left: 250px;
+    padding: 5px 20px;
     text-align: center;
     text-decoration: none;
-    background-color: #075dc6;
+    background-color: #000;
     cursor: pointer;
     color: #f8f8f8;
 }
@@ -452,16 +430,21 @@ legend {
     margin: 10px;
     padding: 5px;
 }
-
+/*  
 .iframe-2 {
     width: 100%;
     height: 100%;
     position: relative;
 }
+*/
 
 
-
-
+.header-title {
+    color: #f8f8f8;
+    text-align: center;
+    margin: 30px 0px;
+    padding: 8px 16px;
+}
 
 /**** RESPONSIVE STYLES ****/
 

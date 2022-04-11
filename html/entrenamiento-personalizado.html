@@ -5,89 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrenamiento personalizado</title>
-     <!-- body normalize -->
-     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-     <!-- STYLES CSS -->
-     <link rel="stylesheet" href="../styles/styles.css">
-     <!-- Font Awesome-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"> ">
-     <!--FONT OSWALD-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+    <!-- body normalize --> 
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- STYLES CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"> ">
+    <!--FONT OSWALD-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <nav class="nav-area">  
-            <ul class="nav-menu">
-                <a class="logo" href="../index.html">Heavy Duty</a> 
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="dietas.html">Dietas</a></li>
-                <li><a href="entrenamiento-personalizado.html">Entrenamiento Personalizado</a></li>
-                <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-                <a href="contacto.html"><button>Contacto</button></a>
-            </ul>
-            <hr>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Heavy duty</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dietas.html">Dietas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="entrenamiento-personalizado.html">Entrenamientos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         
-        <header>
-            <h2 class="head-title">Proba alguno de nuestros entrenamientos</h2>
+        <header class="header-title">
+            <h2>Proba alguno de nuestros entrenamientos!</h2>
         </header>
+
         <div class="grid-container-2">
-            <section class="media1">
-                <article>
-                    <div>
-                        <h2>Entrenamiento 1 sin equipo</h2>
-                        <iframe class="iframe-2" width="560" height="315"  src="https://www.youtube.com/embed/8mOrDuV1EBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <p>Si no tenes equipo o no podes ir al gimnasio, este entrenamiento es ideal para vos ya que podemos realizar toda nuestra rutina sin necesidad de salir de casa y con el 100% de efectividad para que logremos nuestro objetivo diario</p>
+            <section class="media2">
+                <div>
+                    <h2>Entrenamiento 2 en gimnasio </h2>
+                    <p>Intensos ejercicios para mejorar tu resistencia por si lo que estas buscando es mejorar tus capacidades aerobicas y anaerobicas en el corto y mediano plazo con el 100% de efectividad para que no te quedes nunca atras</p>
+                    <div class="ratio ratio-16x9">
+                        <iframe class="iframe-2" width="560" height="315" src="https://www.youtube.com/embed/SdlQ1pb5NwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                </article>
+                </div>
             </section>
             <section class="media2">
-                <article>
-                    <div>
-                        <h2>Entrenamiento 2 en gimnasio </h2>
+                <div>
+                    <h2>Entrenamiento 2 en gimnasio </h2>
+                    <p>Intensos ejercicios para mejorar tu resistencia por si lo que estas buscando es mejorar tus capacidades aerobicas y anaerobicas en el corto y mediano plazo con el 100% de efectividad para que no te quedes nunca atras</p>
+                    <div class="ratio ratio-16x9">
                         <iframe class="iframe-2" width="560" height="315" src="https://www.youtube.com/embed/SdlQ1pb5NwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <p>Intensos ejercicios para mejorar tu resistencia por si lo que estas buscando es mejorar tus capacidades aerobicas y anaerobicas en el corto y mediano plazo con el 100% de efectividad para que no te quedes nunca atras</p>
                     </div>
-                </article>
+                </div>
             </section>
             <section class="media3">
-                <article>
-                    <div>
-                        <h2>Entrenamiento 3 exclusivo de abdominales</h2>
+                <div>
+                    <h2>Entrenamiento 2 en gimnasio </h2>
+                    <p>Intensos ejercicios para mejorar tu resistencia por si lo que estas buscando es mejorar tus capacidades aerobicas y anaerobicas en el corto y mediano plazo con el 100% de efectividad para que no te quedes nunca atras</p>
+                    <div class="ratio ratio-16x9">
                         <iframe class="iframe-2" width="560" height="315" src="https://www.youtube.com/embed/2O1SAhAx7mI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <p>Intensos ejercicios para mejorar tu resistencia por si lo que estas buscando es mejorar tus capacidades aerobicas y anaerobicas en el corto y mediano plazo con el 100% de efectividad para que no te quedes nunca atras</p>
                     </div>
-                </article>
+                </div>
             </section>
             <section class="media4">
-                <article>
-                    <div>
-                        <h2>Entrenamiento 4 exclusivo de abdominales</h2>
+                <div>
+                    <h2>Entrenamiento 4 exclusivo de abdominales</h2>
+                    <p>Si queres darle fuerza a ese abdomen este segmento te va a servir para darle mucha elasticidad y resistencia a ese core, no te olvides de entrenar nunca estos musculos para mayor estabilidad</p>
+                    <div class="ratio ratio-16x9">
                         <iframe class="iframe-2" width="560" height="315" src="https://www.youtube.com/embed/_WTUIeCz3wc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <p>Si queres darle fuerza a ese abdomen este segmento te va a servir para darle mucha elasticidad y resistencia a ese core, no te olvides de entrenar nunca estos musculos para mayor estabilidad</p>
                     </div>
-                </article>
+                </div>
             </section>
             <section class="media5">
-                <article>
-                    <div>
-                        <h2>Entrenamiento 5 exclusivo de abdominales</h2>
+                <div>
+                    <h2>Entrenamiento 5 exclusivo de abdominales</h2>
+                    <p>Si queres darle fuerza a ese abdomen este segmento te va a servir para darle mucha elasticidad y resistencia a ese core, no te olvides de entrenar nunca estos musculos para mayor estabilidad</p>
+                    <div class="ratio ratio-16x9">
                         <iframe class="iframe-2" width="560" height="315" src="https://www.youtube.com/embed/8EL6FyFgbPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <p>Si queres darle fuerza a ese abdomen este segmento te va a servir para darle mucha elasticidad y resistencia a ese core, no te olvides de entrenar nunca estos musculos para mayor estabilidad</p>
                     </div>
-                </article>
+                </div>
             </section>
             <section class="media6">
-                <article>
-                    <div>
-                        <h2>Entrenamiento 6 exclusivo de abdominales</h2>
+                <div>
+                    <h2>Entrenamiento 6 exclusivo de abdominales</h2>
+                    <p>Si queres darle fuerza a ese abdomen este segmento te va a servir para darle mucha elasticidad y resistencia a ese core, no te olvides de entrenar nunca estos musculos para mayor estabilidad</p>
+                    <div class="ratio ratio-16x9">
                         <iframe class="iframe-2" width="560" height="315" src="https://www.youtube.com/embed/gyHUvbVfhdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <p>Si queres darle fuerza a ese abdomen este segmento te va a servir para darle mucha elasticidad y resistencia a ese core, no te olvides de entrenar nunca estos musculos para mayor estabilidad</p>
                     </div>
-                </article>
-            </section>                       
+                </div>
+            </section>             
         </div>
             <div class="footer-area">
                 <section class="social-media">
@@ -104,7 +123,7 @@
                         </a>
                         <a href="https://wa.me/######?text=¡Estoy+interesado!">
                             <i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="../index.html">Volver al Inicio</a>  
+                            <a href="../index.html"><button type="button" class="btn btn-primary btn-lg">Volver al inicio</button></a>  
                     </div>
                 </section>
                 <footer class="footer">
@@ -114,6 +133,11 @@
             </div>        
 
     </div>
+
+    <!-- Javascript-Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>    
     
     
 </body>
