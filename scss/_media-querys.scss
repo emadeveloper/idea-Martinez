@@ -1,0 +1,283 @@
+@media screen and (max-width: 768px) {
+    /* index responsive for tablet */ 
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 0 auto;
+        transition: all .5s; 
+    }
+
+    .nav-menu .logo {
+        margin: 0px auto;
+    }
+
+    .nav-menu, li, a {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .banner1 {
+        margin-bottom: 80px;
+    }
+
+    .banner1, h1 {
+        text-align: center;
+        font-size: 3rem;
+        margin: 0px auto;
+    }
+    
+    .banner3 .head-title {
+        font-size: 1.5rem;
+        color: #000;
+    }
+
+    .baner3, iframe {
+        width: auto;
+    }
+    .social-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-links a {
+        margin: 10px auto;
+        padding: 0;
+    }
+    
+    .social-links i {
+        font-size: 2rem;
+    }
+/* Dietas Responsive for tablet */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-container img {
+        height: 180px;
+    }
+
+    .diet-article h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .diet-article ol, li {
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    /* entrenamiento personalizado responsive */
+
+    .grid-container-2 {
+        grid-template-columns: 1fr;
+    }
+    iframe {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    /* index responsive for mobile XL */
+    .social-media p {
+        font-size: 1rem;
+    }
+    .social-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-links a {
+        margin: 10px auto;
+        padding: 0;
+        font-size: 0.5rem;
+    }
+    
+    .social-links i {
+        font-size: 2rem;
+    }
+
+    /* dietas responsive for mobile xl */
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    /* SOBRE NOSOTROS RESPONSIVE FOR MOBILE XL  */
+    #grid-area-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        background-image:url(/img/aside.jpg) ;
+        background-size: 500PX;
+        background-position: center center;
+        background-repeat: repeat;
+    }
+    .main-area h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .main-area p {
+        font-size: 1rem;
+        text-align: center;
+    }
+   
+   .aside-area {
+        display: none;
+    }
+
+
+@media screen and (max-width: 480px) {
+    /* dietas responsive for mobile XL */
+    .social-media p {
+        font-size: 1rem;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .grid-container div img {
+        height: 400px;
+    }
+
+    }
+
+
+    .grid-container img {
+        height: 180px;
+    }
+
+    .diet-article h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .diet-article ol, li {
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+
+    .head-title {
+        font-size: 1.75rem;
+    }
+
+
+}
+
+
+@media screen and (max-width:320px) {
+    /* index responsive for mobile */ 
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0px auto;
+        padding: 0px 30px;
+    }
+    
+    .nav-menu .logo {
+        margin: 0px auto;
+    }
+
+    .nav-menu, a, li {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .banner1 {
+        margin-bottom: 80px;
+    }
+
+    .banner1, h1 {
+        text-align: center;
+        font-size: 3rem;
+        margin: 0px auto;
+    }
+    
+    .banner3 .head-title {
+        font-size: 1.5rem;
+        color: #000;
+    }
+
+    .baner3, iframe {
+        width: auto;
+    }
+
+    .social-media p {
+        font-size: 1rem;
+    }
+    .social-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-links a {
+        margin: 10px auto;
+        padding: 0;
+        font-size: 0.5rem;
+    }
+    
+    .social-links i {
+        font-size: 2rem;
+    }
+/* dietas responsive for mobile */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container div img {
+        height: 180px;
+    }
+
+    .diet-article h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .diet-article ol, li {
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+
+   /* sobre nosotros for mobile */
+   
+    #grid-area-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        background-image:url(/img/aside.jpg) ;
+        background-size: 500PX;
+        background-position: top center;
+        background-repeat: repeat;
+    }
+    .main-area h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .main-area p {
+        font-size: 1rem;
+        text-align: center;
+    }
+   
+   .aside-area {
+        display: none;
+    }
+
+    /* entrenamiento personalizado responsive for mobile */
+
+    .head-title {
+        font-size: 1.5rem;
+    }
+}    

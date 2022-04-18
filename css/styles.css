@@ -1,0 +1,612 @@
+.nav-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.nav-link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 10px 30px; }
+  .nav-link:hover {
+    background-color: #075dc6; }
+
+.nav-item {
+  margin: 10px;
+  padding: 0px 10px; }
+
+.navbar-brand {
+  font-size: 3rem;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: 'oswald';
+  letter-spacing: 4px;
+  font-weight: 600;
+  overflow: hidden;
+  transition: 0.2s;
+  position: relative; }
+  .navbar-brand:hover {
+    background-color: #075dc6;
+    box-shadow: 0 0 10px #075dc6, o o 40px #075dc6, 0 0 80px #075dc6; }
+
+.social-media {
+  width: 100%;
+  color: #fff;
+  font-size: 0.5rem;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 10px auto; }
+  .social-media p {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: 900; }
+
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px auto; }
+  .social-links a {
+    color: #f8f8f8;
+    padding: 0;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 80px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s; }
+
+.social-links a .fab {
+  font-size: 3rem;
+  line-height: 80px;
+  position: relative;
+  z-index: 10;
+  transition: color 0.5s; }
+
+.social-links a::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -90px;
+  left: 0;
+  background: linear-gradient(-45deg, #075dc6, #06daff);
+  position: absolute;
+  transition: 0.5s; }
+
+.social-links a:hover::after {
+  top: 0; }
+
+.social-links a:hover .fab {
+  color: #000; }
+
+.social-links a:hover {
+  transform: translateY(-10px); }
+
+.social-links i {
+  font-size: 3.5rem; }
+
+.footer {
+  width: 100%;
+  margin: 10px auto;
+  color: #fff;
+  background-color: #4d4d4d;
+  text-align: center; }
+  .footer p {
+    font-size: 10px;
+    text-align: start; }
+
+.btn {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 9px 25px;
+  background-color: #075dc6;
+  color: #f8f8f8;
+  border-radius: 50px;
+  border: none;
+  overflow: hidden;
+  margin: 5px;
+  transition: 0.2s ease-in-out; }
+  .btn:hover {
+    color: #f8f8f8;
+    background-color: #066ce9;
+    box-shadow: 0 0 10px #075dc6, 0 0 40px #075dc6, 0 0 80px #075dc6;
+    transform: translate(X); }
+
+@media screen and (max-width: 768px) {
+  /* index responsive for tablet */
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 auto;
+    transition: all .5s; }
+  .nav-menu .logo {
+    margin: 0px auto; }
+  .nav-menu, li, a {
+    font-size: 2rem;
+    text-align: center; }
+  .banner1 {
+    margin-bottom: 80px; }
+  .banner1, h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0px auto; }
+  .banner3 .head-title {
+    font-size: 1.5rem;
+    color: #000; }
+  .baner3, iframe {
+    width: auto; }
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .social-links a {
+    margin: 10px auto;
+    padding: 0; }
+  .social-links i {
+    font-size: 2rem; }
+  /* Dietas Responsive for tablet */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+  .grid-container img {
+    height: 180px; }
+  .diet-article h2 {
+    font-size: 1.5rem;
+    text-align: center; }
+  .diet-article ol, li {
+    font-size: 1.5rem;
+    font-weight: 100; }
+  /* entrenamiento personalizado responsive */
+  .grid-container-2 {
+    grid-template-columns: 1fr; }
+  iframe {
+    width: 200px;
+    height: 300px; } }
+
+@media screen and (max-width: 767px) {
+  /* index responsive for mobile XL */
+  .social-media p {
+    font-size: 1rem; }
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .social-links a {
+    margin: 10px auto;
+    padding: 0;
+    font-size: 0.5rem; }
+  .social-links i {
+    font-size: 2rem; }
+  /* dietas responsive for mobile xl */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  /* SOBRE NOSOTROS RESPONSIVE FOR MOBILE XL  */
+  #grid-area-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    background-image: url(/img/aside.jpg);
+    background-size: 500PX;
+    background-position: center center;
+    background-repeat: repeat; }
+  .main-area h2 {
+    font-size: 2rem;
+    text-align: center; }
+  .main-area p {
+    font-size: 1rem;
+    text-align: center; }
+  .aside-area {
+    display: none; } }
+
+@media screen and (max-width: 767px) and (max-width: 480px) {
+  /* dietas responsive for mobile XL */
+  .social-media p {
+    font-size: 1rem; }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+  .grid-container div img {
+    height: 400px; } }
+
+@media screen and (max-width: 767px) {
+  .grid-container img {
+    height: 180px; }
+  .diet-article h2 {
+    font-size: 1.5rem;
+    text-align: center; }
+  .diet-article ol, li {
+    font-size: 1.5rem;
+    font-weight: 100; }
+  .head-title {
+    font-size: 1.75rem; } }
+
+@media screen and (max-width: 320px) {
+  /* index responsive for mobile */
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px auto;
+    padding: 0px 30px; }
+  .nav-menu .logo {
+    margin: 0px auto; }
+  .nav-menu, a, li {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0px auto; }
+  .banner1 {
+    margin-bottom: 80px; }
+  .banner1, h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0px auto; }
+  .banner3 .head-title {
+    font-size: 1.5rem;
+    color: #000; }
+  .baner3, iframe {
+    width: auto; }
+  .social-media p {
+    font-size: 1rem; }
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .social-links a {
+    margin: 10px auto;
+    padding: 0;
+    font-size: 0.5rem; }
+  .social-links i {
+    font-size: 2rem; }
+  /* dietas responsive for mobile */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .grid-container div img {
+    height: 180px; }
+  .diet-article h2 {
+    font-size: 1.5rem;
+    text-align: center; }
+  .diet-article ol, li {
+    font-size: 1.5rem;
+    font-weight: 100; }
+  /* sobre nosotros for mobile */
+  #grid-area-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    background-image: url(/img/aside.jpg);
+    background-size: 500PX;
+    background-position: top center;
+    background-repeat: repeat; }
+  .main-area h2 {
+    font-size: 2rem;
+    text-align: center; }
+  .main-area p {
+    font-size: 1rem;
+    text-align: center; }
+  .aside-area {
+    display: none; }
+  /* entrenamiento personalizado responsive for mobile */
+  .head-title {
+    font-size: 1.5rem; } }
+
+body {
+  font-family: 'oswald' 'awesome';
+  font-size: 62.5%;
+  background-color: #1a1a1a; }
+
+/* section1 */
+.banner1 {
+  width: auto;
+  min-height: 500px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Entrenamientos.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f8f8f8;
+  font-family: sans-serif; }
+  .banner1 h1 {
+    font-size: 4rem;
+    margin: 5px auto;
+    padding: 10px 10px;
+    text-align: center; }
+  .banner1 p {
+    font-size: 1.5rem;
+    margin: 0px 10px;
+    padding: 30px 10px;
+    text-align: center;
+    line-height: 1.5; }
+
+.animated-title {
+  text-shadow: 0 0 50px #066ce9, 0 0 100px #066ce9, 0 0 150px #066ce9, 0 0 200px #066ce9, 0 0 250px #066ce9;
+  animation: mianimation 5s linear infinite; }
+
+@keyframes mianimation {
+  0% {
+    filter: hue-rotate(0deg); }
+  100% {
+    filter: hue-rotate(360deg); } }
+
+/* section2 */
+.banner2 {
+  width: auto;
+  height: 500px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/banner4.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f8f8f8;
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 30px; }
+  .banner2 h2 {
+    font-size: 3rem;
+    text-align: center; }
+  .banner2 p {
+    font-size: 1.5rem;
+    text-align: center; }
+
+.carousel-title {
+  color: #f8f8f8;
+  text-align: center; }
+
+/* section3 */
+.banner3 {
+  width: 100%;
+  height: 600px;
+  background-image: url("img/banner5.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f8f8f8;
+  font-size: 2rem;
+  font-family: Helvetica, sans-serif; }
+  .banner3 h3 {
+    color: #f8f8f8;
+    text-align: center; }
+
+.iframe {
+  width: 100%;
+  height: 100%; }
+
+/* DIETAS STYLES */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px; }
+
+.grid-container img {
+  width: 100%; }
+
+.grid-container div {
+  border: solid 1px #fff; }
+
+header .head-title {
+  color: #f8f8f8;
+  text-align: center;
+  font-size: 2rem; }
+
+.grid-container h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 5px auto;
+  padding: 10px; }
+
+.diet-article {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 0px 10px; }
+
+.grid-container p {
+  font-size: 1rem;
+  text-align: center;
+  margin: 10px auto;
+  padding: 5px; }
+
+/* CONTACTO STYLES */
+.contact-header {
+  text-align: center; }
+
+.contact-header .navbar-brand {
+  color: #f8f8f8; }
+
+.form-container {
+  max-width: 600px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/img/banner5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px auto;
+  border: solid 1px #000;
+  box-shadow: 10px 10px 20px 20px rgba(0, 0, 0, 0.5); }
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8; }
+
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8; }
+
+input[type=mail] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8; }
+
+input[type=radio] {
+  padding: 12px 20px;
+  margin: 8px 12px;
+  box-sizing: border-box;
+  background-color: #f8f8f8; }
+
+.label {
+  color: #f8f8f8;
+  font-size: 1.25rem; }
+
+textarea {
+  color: #1a1a1a;
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 1rem;
+  resize: none; }
+
+input[type=submit] {
+  font-size: 1.25rem;
+  margin: 10px auto;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #075dc6;
+  cursor: pointer;
+  color: #f8f8f8;
+  transition: 0.25s;
+  border-radius: 20px;
+  border: none; }
+
+input[type=reset] {
+  font-size: 0.5rem;
+  margin-left: 250px;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000;
+  cursor: pointer;
+  color: #f8f8f8; }
+
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #066ce9;
+  cursor: pointer; }
+
+#objetivo {
+  font-size: 1.25rem;
+  margin: 10px; }
+
+.form-title {
+  color: #f8f8f8;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none; }
+
+fieldset {
+  height: 100%; }
+
+legend {
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: center;
+  color: #f8f8f8; }
+
+/* SOBRE NOSOTROS STYLES */
+#grid-area-container {
+  display: grid;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 20px; }
+
+#grid-area-container .header-area {
+  grid-column: 1 / -1; }
+
+#grid-area-container .main-area {
+  grid-column: span 2;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 5px 30px; }
+
+#grid-area-container .aside-area {
+  grid-column: 3 / 4;
+  background-image: url(/img/aside.jpg);
+  background-size: 800px;
+  background-position: top center;
+  background-repeat: repeat;
+  animation: aside-animated 3s linear infinite; }
+
+@keyframes aside-animated {
+  0% {
+    filter: hue-rotate(0deg); }
+  100% {
+    filter: hue-rotate(360deg); } }
+
+.main-area h2 {
+  color: #fff;
+  font-size: 4rem;
+  text-decoration: none;
+  text-align: center; }
+
+#grid-area-container .footer-area {
+  grid-column: 1 / 4; }
+
+/* ENTRENAMIENTO PERSONALIZADO STYLES */
+.grid-container-2 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; }
+
+.grid-container-2 div {
+  border: solid 1px #fff; }
+
+.grid-container-2 h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center; }
+
+.grid-container-2 p {
+  color: #fff;
+  text-align: center;
+  margin: 10px;
+  padding: 5px; }
+
+/*  
+.iframe-2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+*/
+.header-title {
+  color: #f8f8f8;
+  text-align: center;
+  margin: 30px 0px;
+  padding: 8px 16px; }
+
+/**** RESPONSIVE STYLES ****/

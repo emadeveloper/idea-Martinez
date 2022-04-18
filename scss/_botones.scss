@@ -1,0 +1,19 @@
+.btn {
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 9px 25px;
+    background-color:#075dc6;
+    color: #f8f8f8;
+    border-radius: 50px;
+    border: none;
+    overflow: hidden;
+    margin: 5px;
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+        color: #f8f8f8;
+        background-color:#066ce9;
+        box-shadow: 0 0 10px #075dc6, 0 0 40px #075dc6, 0 0 80px #075dc6;
+        transform: translate(X);
+    }
+}
