@@ -1,19 +1,23 @@
-.btn {
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 9px 25px;
-    background-color:#075dc6;
-    color: #f8f8f8;
-    border-radius: 50px;
-    border: none;
-    overflow: hidden;
-    margin: 5px;
-    transition: 0.2s ease-in-out;
-
-    &:hover{
-        color: #f8f8f8;
-        background-color:#066ce9;
-        box-shadow: 0 0 10px #075dc6, 0 0 40px #075dc6, 0 0 80px #075dc6;
-        transform: translate(X);
-    }
+@mixin button ($background, $color) {
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 9px 25px;
+        background-color: $color-principal;
+        color: $color-de-texto;
+        border-radius: 50px;
+        border: none;
+        overflow: hidden;
+        margin: 5px;
+        transition: 0.2s ease-in-out;
+    
+        &:hover{
+            color:$color-de-texto;
+            background-color:#066ce9;
+            box-shadow: 0 0 10px $color-principal, 0 0 40px #075dc6, 0 0 80px $color-principal;
+            transform: translate(X);
+        }
 }
+.btn {
+    @include button( #075dc6, #fff);
+}
+

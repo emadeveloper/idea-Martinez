@@ -1,17 +1,31 @@
+$navegation:(
+    display:flex,
+    jc:flex-start,
+    align:center,
+    f-s:1rem,
+    text-t: uppercase,
+    pdg: 10px 30px,
+    bord-rad: 20px,
+    margin: 10px,
+    f-f:'oswald'
+);
+
+
+
 .nav-menu {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: map-get($navegation, display);
+    justify-content: map-get($navegation, jc);
+    align-items: map-get($navegation, align);
 }
 
 .nav-link {
-    font-size: 1rem;
-    text-transform: uppercase;
-    border-radius: 20px;
-    padding: 10px 30px;
+    font-size: map-get($navegation, f-s);
+    text-transform: map-get($navegation, text-t);
+    border-radius: map-get($navegation, bord-rad );
+    padding: map-get($navegation, pdg);
 
     &:hover {
-        background-color:#075dc6;
+        background-color:$color-principal;
     }
 }
 
@@ -20,13 +34,13 @@
     padding: 0px 10px;
 }
 
-.navbar-brand {
+%navbar-brand {
     font-size: 3rem;
-    padding: 10px 30px;
-    text-transform: uppercase; 
+    padding: map-get($navegation, pdg);
+    text-transform: map-get($navegation, text-t); 
     text-decoration: none;
     border-radius: 30px;
-    font-family: 'oswald';
+    font-family: map-get($navegation, f-f);
     letter-spacing: 4px;
     font-weight: 600;
     overflow: hidden;
@@ -34,7 +48,11 @@
     position: relative;
 
     &:hover {
-        background-color:#075dc6;
-    box-shadow:  0 0 10px #075dc6, o o 40px #075dc6, 0 0 80px #075dc6;
+        background-color:$color-principal;
+    box-shadow:  0 0 10px $color-principal, o o 40px $color-principal, 0 0 80px $color-principal;
     }
+}
+
+.navbar-brand {
+    @extend %navbar-brand;
 }

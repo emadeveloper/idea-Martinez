@@ -1,0 +1,382 @@
+body {
+    font-family: 'oswald' 'awesome';
+    font-size: 62.5%;
+    background-color: $color-de-fondo;
+}
+
+/* section1 */
+.banner1 {
+    width: auto;
+    min-height: 500px;
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/Entrenamientos.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $color-de-texto;
+    font-family: sans-serif;
+
+    h1 {
+        font-size: 4rem;
+    margin: 5px auto;
+    padding: 10px 10px;
+    text-align: center;
+    }
+    
+    p {
+        font-size: 1.5rem;
+        margin: 0px 10px;
+        padding: 30px 10px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+}
+
+.animated-title {
+    text-shadow: 0 0 50px #066ce9,
+                0 0 100px #066ce9,
+                0 0 150px #066ce9,
+                0 0 200px #066ce9,
+                0 0 250px #066ce9;
+                animation: mianimation 5s linear infinite;
+}
+
+@keyframes mianimation {
+    0% {filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+
+/* section2 */
+
+.banner2 {
+    width: auto;
+    height: 500px;
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/img/banner4.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $color-de-texto;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 30px;
+
+    h2 {
+        font-size: 3rem;
+    text-align: center;
+    }
+    p {
+        font-size: 1.5rem;
+    text-align: center;
+    }
+}
+
+.carousel-title {
+    color: $color-de-texto;
+    text-align: center;
+}
+
+/* section3 */
+
+.banner3 {
+    width: 100%;
+    height: 600px;
+    background-image: url("img/banner5.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-de-texto;
+    font-size: 2rem;
+    font-family: Helvetica, sans-serif;
+
+    h3 {
+        color: $color-de-texto;
+        text-align: center;
+    }
+
+}
+
+.iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* DIETAS STYLES */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.grid-container img {
+    width: 100%;
+ 
+}
+
+.grid-container div {
+    border: solid 1px #fff;
+}
+
+header .head-title {
+    color: #f8f8f8;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.grid-container h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+.diet-article {
+    color: #fff;
+    font-size: 1rem;  
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 0px 10px;  
+}
+
+.grid-container p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+/* CONTACTO STYLES */
+
+.contact-header {
+    text-align: center;
+}
+
+.contact-header .navbar-brand {
+    color: #f8f8f8;
+}
+
+.form-container {
+    max-width: 600px;
+    background-image:linear-gradient( 0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(/img/banner5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px auto;
+    border: solid 1px #000;
+    box-shadow: 10px 10px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color:#f8f8f8;
+  }
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+input[type=mail] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+input[type=radio] {
+    padding: 12px 20px;
+    margin: 8px 12px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+.label {
+    color: #f8f8f8;
+    font-size: 1.25rem;
+}
+
+textarea {
+    color: $color-de-fondo;
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: $color-de-texto;
+    font-size: 1rem;
+    resize: none;
+}
+
+input[type=submit] {
+    font-size: 1.25rem;
+    margin: 10px auto;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: $color-principal;
+    cursor: pointer;
+    color: $color-de-texto;
+    transition: 0.25s;
+    border-radius: 20px;
+    border: none;
+}
+
+input[type=reset] {
+    font-size: 0.5rem;
+    margin-left: 250px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000;
+    cursor: pointer;
+    color: #f8f8f8;
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+    background-color: #066ce9;
+    cursor: pointer;
+}
+
+#objetivo {
+    font-size: 1.25rem;
+    margin: 10px;
+}
+
+.form-title {
+    color: #f8f8f8;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+fieldset {
+    height: 100%;
+}
+
+legend {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    color: #f8f8f8;
+}
+
+/* SOBRE NOSOTROS STYLES */
+
+#grid-area-container {
+    display: grid;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4,auto);
+    grid-gap: 20px;
+}
+
+#grid-area-container .header-area {
+    grid-column: 1 / -1;
+}
+
+#grid-area-container .main-area {
+    grid-column: span 2;
+    color: $color-de-texto;
+    font-size: 1.5rem;
+    margin: 5px 30px;
+}
+
+#grid-area-container .aside-area {
+    grid-column: 3 / 4;
+    background-image:url(/img/aside.jpg);
+    background-size: 800px;
+    background-position: top center;
+    background-repeat: repeat;
+    animation: aside-animated 3s linear infinite;
+}
+
+@keyframes aside-animated {
+    0% {
+        filter:hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.main-area h2 {
+    color: $color-de-texto;
+    font-size: 4rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+#grid-area-container .footer-area {
+    grid-column: 1 / 4;
+}
+
+/* ENTRENAMIENTO PERSONALIZADO STYLES */
+.grid-container-2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; 
+}
+
+.grid-container-2 div {
+    border: solid 1px $color-de-texto;
+}
+
+.grid-container-2 h2 {
+    color: $color-de-texto;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.grid-container-2 p {
+    color: $color-de-texto;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+/*  
+.iframe-2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+*/
+
+
+.header-title {
+    color: $color-de-texto;
+    text-align: center;
+    margin: 30px 0px;
+    padding: 8px 16px;
+}
