@@ -1,0 +1,32 @@
+/* ENTRENAMIENTO PERSONALIZADO STYLES */
+.grid-container-2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; 
+}
+
+.grid-container-2 div {
+    border: solid 1px $color-de-texto;
+}
+
+.grid-container-2 h2 {
+    color: $color-de-texto;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.grid-container-2 p {
+    color: $color-de-texto;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.header-title {
+    color: $color-de-texto;
+    text-align: center;
+    margin: 30px 0px;
+    padding: 8px 16px;
+}

@@ -1,0 +1,51 @@
+/* SOBRE NOSOTROS STYLES */
+
+#grid-area-container {
+    display: grid;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4,auto);
+    grid-gap: 20px;
+}
+
+#grid-area-container .header-area {
+    grid-column: 1 / -1;
+}
+
+#grid-area-container .main-area {
+    grid-column: span 2;
+    color: $color-de-texto;
+    font-size: 1.5rem;
+    margin: 5px 30px;
+}
+
+#grid-area-container .aside-area {
+    grid-column: 3 / 4;
+    background-image:url(/img/aside.jpg);
+    background-size: 800px;
+    background-position: top center;
+    background-repeat: repeat;
+    animation: aside-animated 3s linear infinite;
+}
+
+@keyframes aside-animated {
+    0% {
+        filter:hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.main-area h2 {
+    color: $color-de-texto;
+    font-size: 4rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+#grid-area-container .footer-area {
+    grid-column: 1 / 4;
+}

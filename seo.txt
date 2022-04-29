@@ -1,0 +1,6 @@
+En todos los archivos html sumé el SEO con las siguientes características:
+
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “Sitio web que se dedica a la venta de cursos y planes especializados de alimentacion"
+Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que estan en todas las páginas de mi sitio web: "Entrenamiento, Dietas, Ayuno intermitente, Gimnasio, Cursos, Gym"
+
+Encabezado: para el encabezado del h1 utilicé el texto “Te damos la bienvenida a La RESISTENCIA!”
